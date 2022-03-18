@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import React from 'react'
-import CollectionPreview from '../components/CollectionPreview'
+import CollectionPreview from './CollectionPreview'
 
 
 const CollectionOverview = ({ collections }) => {

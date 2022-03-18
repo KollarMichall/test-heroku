@@ -8,7 +8,7 @@ const CollectionPreview = ({ routeName, title, items }) => {
   return (
     <Box p={5}>
       <Text as={'a'} onClick={() => navigate(routeName)} cursor={'pointer'} display='inline-block' p={2} fontSize='2xl'>{title.toUpperCase()}</Text>
-      <SimpleGrid columns={{ sm: 2, md: 4 }} gap={5}>
+      <SimpleGrid columns={{sm: 2, md: 3 , xl: 4}} gap={5}>
         {items.filter((item, index) => index < 4).map((item) => (
           <CollectionItem key={item.id} item={item} />
         ))}

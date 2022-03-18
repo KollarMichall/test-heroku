@@ -1,8 +1,8 @@
 import React from 'react'
 import { Center, Spinner } from '@chakra-ui/react'
 
-const WithSpinner = WrappedComponent => ({ isLoading, ...props }) => {
-    return isLoading ? (
+const WithSpinner = () => {
+    return (
         <Center h={'80vh'} >
             <Spinner
                 thickness='4px'
@@ -12,9 +12,7 @@ const WithSpinner = WrappedComponent => ({ isLoading, ...props }) => {
                 size='xl'
             />
         </Center>
-    ) : (
-        <WrappedComponent {...props} />
-    )
+    ) 
 }
 
 export default WithSpinner

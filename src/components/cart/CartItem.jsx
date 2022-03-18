@@ -1,5 +1,5 @@
 import { Flex, Image, Text } from '@chakra-ui/react'
-import React from 'react'
+import React, { memo } from 'react'
 
 const CartItem = ({ item }) => {
     const { imageUrl, price, name, quantity } = item
@@ -22,4 +22,4 @@ const CartItem = ({ item }) => {
     )
 }
 
-export default CartItem
+export default memo(CartItem)

@@ -5,8 +5,6 @@ const HomePage = () => {
   return (<>
       <Categories />
     </>
-
-
   )
 }
 
